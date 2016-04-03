@@ -1,0 +1,47 @@
+ module openconfig-catalog-types {
+   yang-version "1";
+   // namespace
+   namespace "http://openconfig.net/yang/catalog-types";
+   prefix "cat-types";
+   // import some basic types
+   // meta
+   organization "OpenConfig working group";
+   contact
+     "OpenConfig working group
+     www.openconfig.net";
+   description
+     "This module defines types and identities used by the OpenConfig
+     YANG module catalog model.";
+   revision "2015-10-18" {
+     description
+     "Initial revision";
+     reference "TBD";
+   }
+   // extension statements
+   // feature statements
+   // identity statements
+   identity implementation-status-type {
+     description
+       "Indications of the status of a module's implementation on a
+       device or server";
+   }
+   identity in-progress {
+     base implementation-status-type;
+     description
+         "Implementation is in progress";
+   }
+   // typedef statements
+   typedef yang-model-publisher 
+   {
+     type enumeration {
+       enum "standards";
+       enum "commercial";
+       enum "forum";
+     }
+   }
+   // grouping statements
+   // data definition statements
+   // augment statements
+   // rpc statements
+   // notification statements
+ }
