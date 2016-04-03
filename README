@@ -1,0 +1,6 @@
+Try ./yang_data_model_catalog.py -h
+
+The input file is the yang input which you want to process
+The output file is where type info gets stored
+The type is the information which you want to process like identity/grouping/namespace/etc
+The mode is whethere you want to the info to be appended in the existing file. The mode has to be False for appending.
